@@ -1,0 +1,218 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* color: #252525; */
+}
+
+.nav-bar{
+display: flex;
+background-color: #ffff;
+height: 65px;
+align-items: center;
+justify-content: space-between;
+padding-top: 5px;
+position: sticky;
+width:100%;
+top: 0;
+z-index: 3000;
+box-sizing: border-box;
+padding-left: 5vw;
+padding-right:5vw;
+}
+.menu{
+    color: #253D4E;
+    position: relative;
+    left: 24vw;
+}
+.menu>span{
+    margin-inline:15px;
+
+}
+.highlight{
+    color: #509E2F;   
+}
+.hero_image>img{
+    width: 90vw;
+   margin-left:3vw;
+}
+.hero{
+    margin-left: 20px;
+    margin-right:20px ;
+    display: flex;
+   margin-top: 30px; 
+}
+.text_hero{
+    position: relative;
+    z-index: 2000;
+    right: 83vw;
+    top: 10vh;
+}
+.search_heading{
+    font-weight:600;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.search-container {
+    width: 90vw; 
+   margin-left: 5vw;
+    position: relative;
+    margin-top: 2vh;
+    display: flex;
+    height: 42px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 35px; 
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; 
+    top: 28%;
+}
+#searchBtn{
+    cursor: pointer;
+}
+
+.quickSearch{
+    display: flex;
+    margin-top: 4vh;
+    margin-left: 5vw;
+    gap: 20px;
+}
+
+.quickSearhCard{
+height: 80px;
+width: 210px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+border-radius: 10px;
+cursor: pointer;
+padding-inline: 5px;
+}
+.quickSearhCard>div{
+margin-inline:12px ;
+}
+.arrow{
+    font-size: 18px;
+    font-weight: 600;
+}
+.s_card1{
+background-color: #EAAA00;  
+}
+.s_card2{
+background-color: #C4D600;
+}
+.s_card3{
+background-color:#DC582A ;
+}
+.main{
+    display: flex;
+    margin: 40px;
+}
+
+.filter{
+    width: 18vw;
+}
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+  }
+.rating_heading{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
+
+
+.card_container{
+margin-left: 100px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+width: 95vw;
+}
+
+.recipe_card{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fefefe;
+    box-shadow: 1px 1px 15px rgb(215, 216, 213);
+}
+.recipe_card>img{
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 240px;
+    height: 220px;
+}
+.fade{
+    color:#A1A1A1;
+}
+.recipe_name{
+    font-weight: 700;
+    margin-right: 70px;
+}
+.small{
+    font-size: 12px;
+}
+.time{
+    color: #DC582A;
+    font-weight: 600;
+    margin-right: 120px;
+}
+.rating>img{
+ position: relative;
+ top: 2px;
+ margin-right: 5px;
+}
+.name_rating{
+margin-top: 5px;
+margin-bottom:5px ;
+}
+.comment>img{
+width: 18px;  
+position: relative;
+top: 4px;  
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.description{
+    width: 20vw;
+}
+
+
+.subcribe{
+    width: 22vw;
+}
+
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.link_image>img{
+    width: 40px;
+}
