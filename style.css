@@ -237,7 +237,26 @@ td{
 .footer_mobile{
     display: none;
 }
-
+.hero_image_mobile{
+    display: none;
+}
+.liked{
+    background-image: url('assets/like.svg');
+}
+.dislike{
+    background-image: url('assets/like (1).svg');
+    z-index: 2000;
+}
+.sub{
+    border: none;
+    background-color:#509E2F;
+    color: #fff;
+    padding: 6px;
+}
+.sub_input{
+padding: 5px;
+margin-top: 20px;
+}
 
 @media (max-width: 767.98px) {
     .nav-bar{
@@ -319,11 +338,17 @@ td{
     /* end */
 
     .hero_image>img{
+        display: none;
+    }
+    .hero_image_mobile{
+        display: block;
+    }
+    .hero_image_mobile>img{
         width: 90vw;
-       margin-left:0vw;
+        height: 50vw;
     }
     .text_hero>img{
-        width: 30vw;
+       display: none;
     }
     .text_hero{
         right: 83vw;
@@ -352,15 +377,25 @@ td{
         margin-left: 15px;
     }
     .recipe_card{
-        width: 160px;
+        width: 140px;
     }
     .recipe_card>img{
-        width: 160px;
+        width: 140px;
         height: 100px;
     }
     .recipe_name{
-       font-size: 14px;
+       font-size: 12px;
        margin-right: 10px;
+       width: 100px;
+    }
+    .rating{
+        position: relative;
+        left: 105px;
+        bottom: 21px;
+        margin: 0;
+    }
+    .name_rating{
+        height: 20px;
     }
     .time{
         margin-right: 50px;
@@ -401,6 +436,6 @@ td{
         margin-top: 30px;
     }
     .sp_inpval{
-        
+
     }
 }

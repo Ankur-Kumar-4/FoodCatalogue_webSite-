@@ -250,13 +250,13 @@ function renderRecipeCard(data) {
     <span class="fade small">${data[i].type}</span>
 
     <div class="name_rating">
-    <span class="recipe_name">${data[i].name}</span>
+    <div class="recipe_name">${data[i].name}</div>
     <span class="rating fade small"><img src="assets/Frame 28.svg" alt="">${data[i].rating}</span>
     </div>
       
     <div>
         <span class="time">${data[i].time}</span>
-        <span class =${data[i].isLiked ? "liked": "dislike"}></span>
+        <span class = ${data[i].isLiked ? "liked": "dislike"}></span>
         <span class="comment">
             <img src="assets/comments.svg" alt="">
         </span>
