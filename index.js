@@ -191,23 +191,54 @@ document.getElementById("nonVegRecipes").addEventListener("click",(ev)=>{
     renderRecipeCard(manipulatedData);
 });
 
+let selectedValue;
 
+const radios = document.getElementsByName("fav_language");
 
+for (let i = 0; i < radios.length; i++) {
+  if(radios[i].checked){
+    selectedValue = radios[i].value;
+    break;
+  }
+}
 
+const input=document.querySelectorAll('input[name="fav_language"]');
 
+for (let i = 0; i < input.length; i++) {
+  input[i].addEventListener("change",sortRate)
+  
+}
 
+function sortRate(event) {
+  let input_val = event.target.value;
 
+  let manipulatedData = [...data]
+    manipulatedData = data.filter((val)=>{
+        if(input_val ==="4+"){
+           if(val.rating > 4){
+            return val;
+           }
+        }else{
+          if(val.rating < 4){
+            return val;
+          }
+        }
+    });
+    renderRecipeCard(manipulatedData);
 
-renderRecipeCard(manipulatedData);
+}
+
+// filterVal.addEventListener("change",(ev)=>{
+//       console.log(filterVal.value);        
+// });
 
 
 
 function renderRecipeCard(data) { 
+    cardContainer.innerHTML=""
 
     for (let i = 0; i < data.length; i++) {
        
-    
-    
 
    const card = document.createElement("div");
 
@@ -225,7 +256,7 @@ function renderRecipeCard(data) {
       
     <div>
         <span class="time">${data[i].time}</span>
-        <span class="liked"></span>
+        <span class =${data[i].isLiked ? "liked": "dislike"}></span>
         <span class="comment">
             <img src="assets/comments.svg" alt="">
         </span>
@@ -238,5 +269,16 @@ function renderRecipeCard(data) {
    }
 }
 
+renderRecipeCard(data);
 
+
+document.getElementById("nav_btn").addEventListener("click", function () {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+});
+
+document.getElementById("closeButton").addEventListener("click", function () {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.remove("active");
+});
 
